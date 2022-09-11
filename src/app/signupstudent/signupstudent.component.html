@@ -6,26 +6,23 @@
         </div>
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
             <div class="row g-10">
-                <form>
+                <form #studentregister="ngForm" (ngSubmit)="Studreg()">
                   <label for="" class="form-label">Name</label>
-                    <input type="text" class="form-control" name="name">
-
-                    <label for="" class="form-label">Student ID</label>
-                    <input type="text" class="form-control" name="id">
+                    <input type="text" class="form-control" name="name" [(ngModel)]="data.studname">
 
                     <label for="" class="form-label">Registration Number</label>
-                    <input type="" class="form-control" name="regno">
+                    <input type="" class="form-control" name="regno" [(ngModel)]="data.studregno">
 
                     <label for="" class="form-label">Course</label>
-                    <select name="course" class="form-control" name="course">
+                    <select name="course" class="form-control" name="course" [(ngModel)]="data.studcourse">
                         <option value="Select">Select</option>
                         <option value="BCA">BCA</option>
                     </select>
                     <label for="" class="form-label">Email</label>
-                    <input type="email" name="" id="" class="form-control" name="email">
+                    <input type="email" name="" id="" class="form-control" name="email" [(ngModel)]="data.studemail">
 
                     <label for="" class="form-label">Password</label>
-                    <input type="password" name="" id="" class="form-control" name="password">
+                    <input type="password" name="" id="" class="form-control" name="password" [(ngModel)]="data.studpass">
 <br>
                     <button class="btn btn-primary">Register</button>
                 </form>

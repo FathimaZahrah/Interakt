@@ -9,6 +9,9 @@ import { SignupteacherComponent } from './signupteacher/signupteacher.component'
 import { SignupstudentComponent } from './signupstudent/signupstudent.component';
 import { TeacherhomeComponent } from './teacherhome/teacherhome.component';
 import { StudenthomeComponent } from './studenthome/studenthome.component';
+import { LoginComponent } from './login/login.component';
+import {HttpClientModule} from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,11 +21,14 @@ import { StudenthomeComponent } from './studenthome/studenthome.component';
     SignupteacherComponent,
     SignupstudentComponent,
     TeacherhomeComponent,
-    StudenthomeComponent
+    StudenthomeComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
