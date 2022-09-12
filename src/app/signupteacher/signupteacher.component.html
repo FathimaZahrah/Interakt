@@ -1,30 +1,56 @@
-<br>
-  <p style="font-family: Lucida Handwriting; font-size: 30px;background-color: #edcdb3;" align="center"><b>Teacher Signup</b></p>
-  <br>
-  <div class="container">
+<div class="container">
     <div class="row">
+      <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+        
+        <p style="font-family: Lucida Handwriting; font-size: 30px;background-color: #edcdb3;" align="center"><b>Teacher Signup</b></p>
+      
+      </div>
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
             <div class="row g-10">
-                <form>
+                <form #teacherregister="ngForm" (ngSubmit)="Teachreg()">
                   <label for="" class="form-label">Name</label>
-                    <input type="text" class="form-control">
-                    <label for="" class="form-label">Student ID</label>
-                    <input type="text" class="form-control">
-                    <label for="" class="form-label">Registration Number</label>
-                    <input type="" class="form-control">
+                    <input type="text" class="form-control" [(ngModel)]="data1.name">
+                    <label for="" class="form-label">Faculty ID</label>
+                    <input type="" class="form-control" [(ngModel)]="data1.facid">
+                    <label for="" class="form-label">Department</label>
+                    <select name="course" class="form-control" [(ngModel)]="data1.dept">
+                        <option value="Select">Select</option>
+                        <option value="PG Depatment of Computer Science and Applications">PG Depatment of Computer Science and Applications</option>
+                    </select>
                     <label for="" class="form-label">Course</label>
-                    <select name="course" class="form-control">
+                    <select name="course" class="form-control" [(ngModel)]="data1.course">
                         <option value="Select">Select</option>
                         <option value="BCA">BCA</option>
                     </select>
+                    <label for="" class="form-label">Semester</label>
+                    <select name="course" class="form-control" [(ngModel)]="data1.sem">
+                        <option value="Select">Select</option>
+                        <option value="S4">S4</option>
+                    </select>
                     <label for="" class="form-label">Email</label>
-                    <input type="email" name="" id="" class="form-control" >
+                    <input type="email" name="" id="" class="form-control" [(ngModel)]="data1.email">
                     <label for="" class="form-label">Password</label>
-                    <input type="password" name="" id="" class="form-control">
+                    <input type="password" name="" id="" class="form-control" [(ngModel)]="data1.pass">
                     <br>
-                    <button class="btn btn-primary">Register</button>
+                   <button class="btn btn-primary">Register</button>
                 </form>
             </div>
         </div>
     </div>
+  </div>
+
+  <div class="container">
+                    
+    <div class="row" g-5>
+      <div class="col col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4"></div>
+      <div class="col col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+    
+        <a style="margin: auto;
+        width: 50%;
+        padding: 10px;" routerLink="/logint"> <button class="btn btn-success">Go to Login</button></a>
+
+      </div>
+      <div class="col col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4"></div>
+    </div>
+  
   </div>

@@ -12,6 +12,7 @@ import { StudenthomeComponent } from './studenthome/studenthome.component';
 import { LoginComponent } from './login/login.component';
 import {HttpClientModule} from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { LoginteacherComponent } from './loginteacher/loginteacher.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FormsModule } from '@angular/forms';
     SignupstudentComponent,
     TeacherhomeComponent,
     StudenthomeComponent,
-    LoginComponent
+    LoginComponent,
+    LoginteacherComponent
   ],
   imports: [
     BrowserModule,

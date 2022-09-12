@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { InteraktserviceService } from '../interaktservice.service';
 
 @Component({
   selector: 'app-signupteacher',
@@ -6,10 +7,26 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./signupteacher.component.css']
 })
 export class SignupteacherComponent implements OnInit {
+  data1={
+    name:"",
+    facid:"",
+    dept:"",
+    course:"",
+    sem:"",
+    email:"",
+    pass:""
+  }
 
-  constructor() { }
+  constructor(private api:InteraktserviceService) { }
 
   ngOnInit(): void {
+  }
+  Teachreg()
+  {
+    this.api.teachreg(this.data1).subscribe((data)=>{
+
+    })
+    alert("Success")
   }
 
 }
