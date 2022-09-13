@@ -13,6 +13,12 @@ import { LoginComponent } from './login/login.component';
 import {HttpClientModule} from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { LoginteacherComponent } from './loginteacher/loginteacher.component';
+import { MysqlstudentComponent } from './mysqlstudent/mysqlstudent.component';
+import { MysqlassignstudentComponent } from './mysqlassignstudent/mysqlassignstudent.component';
+import { MysqlattenstudentComponent } from './mysqlattenstudent/mysqlattenstudent.component';
+import { MysqlteacherComponent } from './mysqlteacher/mysqlteacher.component';
+import { MysqlassignteacherComponent } from './mysqlassignteacher/mysqlassignteacher.component';
+import { MysqlattenteacherComponent } from './mysqlattenteacher/mysqlattenteacher.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +30,13 @@ import { LoginteacherComponent } from './loginteacher/loginteacher.component';
     TeacherhomeComponent,
     StudenthomeComponent,
     LoginComponent,
-    LoginteacherComponent
+    LoginteacherComponent,
+    MysqlstudentComponent,
+    MysqlassignstudentComponent,
+    MysqlattenstudentComponent,
+    MysqlteacherComponent,
+    MysqlassignteacherComponent,
+    MysqlattenteacherComponent
   ],
   imports: [
     BrowserModule,
