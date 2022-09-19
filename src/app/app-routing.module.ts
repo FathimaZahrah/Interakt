@@ -13,6 +13,16 @@ import { MysqlattenstudentComponent } from './mysqlattenstudent/mysqlattenstuden
 import { MysqlteacherComponent } from './mysqlteacher/mysqlteacher.component';
 import { MysqlassignteacherComponent } from './mysqlassignteacher/mysqlassignteacher.component';
 import { MysqlattenteacherComponent } from './mysqlattenteacher/mysqlattenteacher.component';
+import { MysqlteststudentComponent } from './mysqlteststudent/mysqlteststudent.component';
+import { MysqltestteacherComponent } from './mysqltestteacher/mysqltestteacher.component';
+import { DataminteacherComponent } from './dataminteacher/dataminteacher.component';
+import { DatamintestteacherComponent } from './datamintestteacher/datamintestteacher.component';
+import { DataminassignteacherComponent } from './dataminassignteacher/dataminassignteacher.component';
+import { DataminattenteacherComponent } from './dataminattenteacher/dataminattenteacher.component';
+import { DataminstudentComponent } from './dataminstudent/dataminstudent.component';
+import { DataminteststudentComponent } from './dataminteststudent/dataminteststudent.component';
+import { DataminassignstudentComponent } from './dataminassignstudent/dataminassignstudent.component';
+import { DataminattenstudentComponent } from './dataminattenstudent/dataminattenstudent.component';
 
 const routes: Routes = [
   {path:"",component:HomeComponent},
@@ -22,12 +32,26 @@ const routes: Routes = [
   {path:"teacherhome",component:TeacherhomeComponent},
   {path:"logins",component:LoginComponent},
   {path:"logint",component:LoginteacherComponent},
+
   {path:"mynotestud",component:MysqlstudentComponent},
   {path:"myassignstud",component:MysqlassignstudentComponent},
   {path:"myattenstud",component:MysqlattenstudentComponent},
+  {path:"myteststud",component:MysqlteststudentComponent},
+
   {path:"mynotesteach",component:MysqlteacherComponent},
   {path:"myassignteach",component:MysqlassignteacherComponent},
-  {path:"myattenteach",component:MysqlattenteacherComponent}
+  {path:"myattenteach",component:MysqlattenteacherComponent},
+  {path:"mytestteach",component:MysqltestteacherComponent},
+
+  {path:"datanotesteach",component:DataminteacherComponent},
+  {path:"datatestteach",component:DatamintestteacherComponent},
+  {path:"dataassignteach",component:DataminassignteacherComponent},
+  {path:"dataattenteach",component:DataminattenteacherComponent},
+
+  {path:"datanotesstud",component:DataminstudentComponent},
+  {path:"datateststud",component:DataminteststudentComponent},
+  {path:"dataassignstud",component:DataminassignstudentComponent},
+  {path:"dataattenstud",component:DataminattenstudentComponent}
 
 ];
 

@@ -1,31 +1,43 @@
-<h2 style="background-color:#edcdb3;" align="center">MySql</h2>
-
-<div class="container">
-    <div class="row">
-        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-            
+<nav class="navbar bg-light fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="/studenthome" style="font-family: Lucida Handwriting;"><img src="https://64.media.tumblr.com/d6fab67b1dc67a478baf7c7c8d3bcb0b/c3e58613074bce27-20/s500x750/6e974e0b0df31ef0608c25e0510779490b2392ab.pnj" alt="" width="30" height="24" class="d-inline-block align-text-top">
+        Interakt </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h4 class="offcanvas-title" id="offcanvasNavbarLabel" style="font-family: Lucida Handwriting;">Interakt</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/mynotestud"><h5>Notes</h5></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/myassignstud"><h5>Assignments</h5></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/myteststud"><h5>Testpapers</h5></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/myattenstud"><h5>Attendance</h5></a>
+              </li>
+          </ul>
+        </div>
+      </div>
     </div>
+  </nav>
+
+
+
+<br><br><br>
+
+<h1 style="background-color:#edcdb3;font-family: Lucida Handwriting; text-align: center;" align="center">MySql</h1>
+
+<div class="row" style="background-image: url(http://64.media.tumblr.com/147dd8517c490c545b8516fcf2d428ee/a2173060dcee5537-3b/s540x810/cf691a1c1932b3b620cfc36a7f9aa8529691c584.pnj);height: 250px; width: 100%;">
+    <h2 style="color: white; line-height: 250px;
+    height: 250px; font-size: 70px; font-family: Lucida Handwriting;" align="right">Notes</h2>
 </div>
-<div class="row" style="background-color: #edcdb3;">
-    <div class="col col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-     <a routerLink="/mynotestud" style="text-align: center;"><h4>Notes</h4></a>
-    </div>
-    <div class="col col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-        <a routerLink="/myassignstud" style="text-align: center;"><h4>Assignments</h4></a>
-    </div>
-    <div class="col col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-        <a href="" style="text-align: center;"><h4>Test Papers</h4></a>
-    </div>
-    <div class="col col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-        <a href="" style="text-align: center;"><h4>Attendance</h4></a>
-    </div>
-</div>
-<br>
-<h2 align="center">Notes</h2>
-<br>
-<div class="row">
-    <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 co-xxl-12">
-        
-    </div>
-</div>
+

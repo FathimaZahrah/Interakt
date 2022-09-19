@@ -7,26 +7,25 @@ import { InteraktserviceService } from '../interaktservice.service';
   styleUrls: ['./signupteacher.component.css']
 })
 export class SignupteacherComponent implements OnInit {
-  data1={
-    name:"",
-    facid:"",
-    dept:"",
-    course:"",
-    sem:"",
-    email:"",
-    pass:""
+  dataa={
+    teachname:"",
+    teachfac:"",
+    teachdept:"",
+    teachcourse:"",
+    teachsem:"",
+    teachemail:"",
+    teachpass:""
   }
-
-  constructor(private api:InteraktserviceService) { }
+  
+  constructor(private aki:InteraktserviceService) { }
 
   ngOnInit(): void {
   }
-  Teachreg()
-  {
-    this.api.teachreg(this.data1).subscribe((data)=>{
+ Teachreg(){
+  this.aki.teachreg(this.dataa).subscribe((dataa)=>{
 
-    })
-    alert("Success")
-  }
+  })
+  alert("success")
+ }
 
 }

@@ -10,7 +10,7 @@ export class InteraktserviceService {
   studreg(data:any){
     return this.http.post<any>('http://localhost:3200/signupstudent',data)
   }
-  teachreg(data1:any){
-    return this.http.post<any>('http://localhost:3200/signupteacher',data1)
-  }
+ teachreg(dataa:any){
+  return this.http.post<any>('http://localhost:3200/signupteacher',dataa)
+ }
 }

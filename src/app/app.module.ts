@@ -19,6 +19,16 @@ import { MysqlattenstudentComponent } from './mysqlattenstudent/mysqlattenstuden
 import { MysqlteacherComponent } from './mysqlteacher/mysqlteacher.component';
 import { MysqlassignteacherComponent } from './mysqlassignteacher/mysqlassignteacher.component';
 import { MysqlattenteacherComponent } from './mysqlattenteacher/mysqlattenteacher.component';
+import { MysqlteststudentComponent } from './mysqlteststudent/mysqlteststudent.component';
+import { MysqltestteacherComponent } from './mysqltestteacher/mysqltestteacher.component';
+import { DataminteacherComponent } from './dataminteacher/dataminteacher.component';
+import { DatamintestteacherComponent } from './datamintestteacher/datamintestteacher.component';
+import { DataminassignteacherComponent } from './dataminassignteacher/dataminassignteacher.component';
+import { DataminattenteacherComponent } from './dataminattenteacher/dataminattenteacher.component';
+import { DataminstudentComponent } from './dataminstudent/dataminstudent.component';
+import { DataminteststudentComponent } from './dataminteststudent/dataminteststudent.component';
+import { DataminassignstudentComponent } from './dataminassignstudent/dataminassignstudent.component';
+import { DataminattenstudentComponent } from './dataminattenstudent/dataminattenstudent.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +46,17 @@ import { MysqlattenteacherComponent } from './mysqlattenteacher/mysqlattenteache
     MysqlattenstudentComponent,
     MysqlteacherComponent,
     MysqlassignteacherComponent,
-    MysqlattenteacherComponent
+    MysqlattenteacherComponent,
+    MysqlteststudentComponent,
+    MysqltestteacherComponent,
+    DataminteacherComponent,
+    DatamintestteacherComponent,
+    DataminassignteacherComponent,
+    DataminattenteacherComponent,
+    DataminstudentComponent,
+    DataminteststudentComponent,
+    DataminassignstudentComponent,
+    DataminattenstudentComponent
   ],
   imports: [
     BrowserModule,
