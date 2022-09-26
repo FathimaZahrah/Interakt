@@ -23,6 +23,12 @@ import { DataminstudentComponent } from './dataminstudent/dataminstudent.compone
 import { DataminteststudentComponent } from './dataminteststudent/dataminteststudent.component';
 import { DataminassignstudentComponent } from './dataminassignstudent/dataminassignstudent.component';
 import { DataminattenstudentComponent } from './dataminattenstudent/dataminattenstudent.component';
+import { AdminhomeComponent } from './adminhome/adminhome.component';
+import { AdminloginComponent } from './adminlogin/adminlogin.component';
+import { SubjectAddComponent } from './subject-add/subject-add.component';
+import { SubjectAllotmentComponent } from './subject-allotment/subject-allotment.component';
+import { StudentAllotComponent } from './student-allot/student-allot.component';
+import { MysqlhometeacherComponent } from './mysqlhometeacher/mysqlhometeacher.component';
 
 const routes: Routes = [
   {path:"",component:HomeComponent},
@@ -38,6 +44,7 @@ const routes: Routes = [
   {path:"myattenstud",component:MysqlattenstudentComponent},
   {path:"myteststud",component:MysqlteststudentComponent},
 
+  {path:"myhometeach",component:MysqlhometeacherComponent},
   {path:"mynotesteach",component:MysqlteacherComponent},
   {path:"myassignteach",component:MysqlassignteacherComponent},
   {path:"myattenteach",component:MysqlattenteacherComponent},
@@ -51,8 +58,13 @@ const routes: Routes = [
   {path:"datanotesstud",component:DataminstudentComponent},
   {path:"datateststud",component:DataminteststudentComponent},
   {path:"dataassignstud",component:DataminassignstudentComponent},
-  {path:"dataattenstud",component:DataminattenstudentComponent}
+  {path:"dataattenstud",component:DataminattenstudentComponent},
 
+  {path:"adminhome",component:AdminhomeComponent},
+  {path:"adminlogin",component:AdminloginComponent},
+  {path:"subadd",component:SubjectAddComponent},
+  {path:"suballot",component:SubjectAllotmentComponent},
+  {path:"studallot",component:StudentAllotComponent}
 ];
 
 @NgModule({

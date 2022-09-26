@@ -29,6 +29,12 @@ import { DataminstudentComponent } from './dataminstudent/dataminstudent.compone
 import { DataminteststudentComponent } from './dataminteststudent/dataminteststudent.component';
 import { DataminassignstudentComponent } from './dataminassignstudent/dataminassignstudent.component';
 import { DataminattenstudentComponent } from './dataminattenstudent/dataminattenstudent.component';
+import { AdminhomeComponent } from './adminhome/adminhome.component';
+import { AdminloginComponent } from './adminlogin/adminlogin.component';
+import { SubjectAddComponent } from './subject-add/subject-add.component';
+import { SubjectAllotmentComponent } from './subject-allotment/subject-allotment.component';
+import { StudentAllotComponent } from './student-allot/student-allot.component';
+import { MysqlhometeacherComponent } from './mysqlhometeacher/mysqlhometeacher.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +62,13 @@ import { DataminattenstudentComponent } from './dataminattenstudent/dataminatten
     DataminstudentComponent,
     DataminteststudentComponent,
     DataminassignstudentComponent,
-    DataminattenstudentComponent
+    DataminattenstudentComponent,
+    AdminhomeComponent,
+    AdminloginComponent,
+    SubjectAddComponent,
+    SubjectAllotmentComponent,
+    StudentAllotComponent,
+    MysqlhometeacherComponent
   ],
   imports: [
     BrowserModule,
