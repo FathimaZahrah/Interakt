@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { InteraktserviceService } from '../interaktservice.service';
 
 @Component({
   selector: 'app-subject-add',
@@ -6,10 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./subject-add.component.css']
 })
 export class SubjectAddComponent implements OnInit {
-
-  constructor() { }
+data2={
+  subid:"",
+  subname:""
+}
+  constructor(private api:InteraktserviceService) { }
 
   ngOnInit(): void {
   }
+Addsub(){
+  this.api.addsub(this.data2).subscribe((data)=>{
 
+  })
+  alert("success")
+}
 }

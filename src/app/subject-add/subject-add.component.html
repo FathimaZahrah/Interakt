@@ -17,16 +17,16 @@
     </div>
     <br>
     <div class="row" g-5>
-      <div class="col col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4"></div>
-      <div class="col col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+      <form #addsubject="ngForm" (ngSubmit)="Addsub()">
+      <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12" align="center">
         <label for="" class="form-label">Subject Id</label>
-        <input type="text" name="" id="" class="form-control">
+        <input type="text" class="form-control" [(ngModel)]="data2.subid" name="subid">
         <label for="" class="form-label">Subject Name</label>
-        <input type="text" name="" id="" class="form-control">
+        <input type="text" class="form-control" [(ngModel)]="data2.subname" name="subname">
         <br>
-        <a routerLink="/"><button class="btn btn-primary">Add</button></a>
+        <button class="btn btn-primary">Add</button>
       </div>
-      <div class="col col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4"></div>
+    </form>
     </div>
   
   </div>

@@ -13,4 +13,8 @@ export class InteraktserviceService {
  teachreg(dataa:any){
   return this.http.post<any>('http://localhost:3200/signupteacher',dataa)
  }
+ addsub(data2:any){
+  return this.http.post<any>('http://localhost:3200/subadd',data2)
+ }
+
 }
