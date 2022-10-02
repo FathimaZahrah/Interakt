@@ -17,23 +17,23 @@
     </div>
     <br>
     <div class="row" g-5>
-        <form>
+        <form #suballot="ngForm" (ngSubmit)="Allot()">
       <div class="col col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4"></div>
       <div class="col col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
         <label for="" class="form-label">Subject Id</label>
-        <select name="subid" class="form-control">
+        <select name="subid" class="form-control" [(ngModel)]="data4.allotid">
             <option value="Select">Select</option>
             <option *ngFor="let i of data3" value="{{i.subid}}">{{i.subid}}</option>
         </select>
         <label for="" class="form-label">Subject Name</label>
-        <select name="subame" class="form-control">
+        <select name="subame" class="form-control" [(ngModel)]="data4.allotname">
             <option value="Select">Select</option>
-            <option value="{{i.subname}}">{{i.subname}}</option>
+            <option *ngFor="let i of data3" value="{{i.subname}}">{{i.subname}}</option>
         </select>
         <label for="" class="form-label">Teacher Id</label>
-        <input type="text" name="" id="" class="form-control">
+        <input type="text" name="allotteachid" id="" class="form-control" [(ngModel)]="data4.allotteachid">
         <label for="" class="form-label">Teacher Name</label>
-        <input type="text" name="" id="" class="form-control">
+        <input type="text" name="allotteachname" id="" class="form-control" [(ngModel)]="data4.allotteachname">
         <br>
         <a routerLink="/"><button class="btn btn-primary">Allot</button></a>
       </div>

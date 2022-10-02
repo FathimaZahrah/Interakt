@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { InteraktserviceService } from '../interaktservice.service';
 
 @Component({
   selector: 'app-student-allot',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StudentAllotComponent implements OnInit {
 
-  constructor() { }
+  constructor(private api:InteraktserviceService) { 
+    api.viewSub().subscribe((response=>{
+      this.data2=response
+    }))
+  }
 
   ngOnInit(): void {
   }
+  data2:any=[]
 
 }

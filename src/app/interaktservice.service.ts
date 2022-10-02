@@ -16,5 +16,13 @@ export class InteraktserviceService {
  addsub(data2:any){
   return this.http.post<any>('http://localhost:3200/subadd',data2)
  }
-
+ allot(data4:any){
+  return this.http.post<any>('http://localhost:3200/suballot',data4)
+ }
+ viewSub=()=>{
+  return this.http.get('http://localhost:3200/viewSub')
+ }
+ ViewSub=()=>{
+  return this.http.get('http://localhost:3200/ViewSub')
+ }
 }
