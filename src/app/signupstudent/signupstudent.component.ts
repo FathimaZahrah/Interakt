@@ -23,7 +23,7 @@ data={
     this.api.studreg(this.data).subscribe((data)=>{
 
     })
-    alert("Success")
+
   }
 
 }

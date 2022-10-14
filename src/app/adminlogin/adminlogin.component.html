@@ -62,17 +62,17 @@
       <div class="row" style="font-family: Lucida Handwriting; font-size: 30px;background-color: #edcdb3;" align="center"><b>Login</b>
       </div>
       <div class="row" g-5>
+        <form #adminlogin="ngForm" (ngSubmit)="alogin()" >
         <div class="col col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4"></div>
-        <div class="col col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-          <label for="" class="form-label">Admin Id</label>
-          <input type="email" name="" id="" class="form-control">
+        <div class="col col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4" >
           <label for="" class="form-label">Username</label>
-          <input type="email" name="" id="" class="form-control">
+          <input type="email" name="username" class="form-control" [(ngModel)]="username">
           <label for="" class="form-label">Password</label>
-          <input type="password" name="" id="" class="form-control">
+          <input type="password" name="password" class="form-control" [(ngModel)]="password">
           <br>
-          <a routerLink="/adminhome"><button class="btn btn-primary">Log In</button></a>
+          <button class="btn btn-primary">Log In</button>
         </div>
+      </form>
         <div class="col col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4"></div>
       </div>
     

@@ -12,7 +12,6 @@ export class SignupteacherComponent implements OnInit {
     teachfac:"",
     teachdept:"",
     teachcourse:"",
-    teachsem:"",
     teachemail:"",
     teachpass:""
   }
@@ -25,7 +24,6 @@ export class SignupteacherComponent implements OnInit {
   this.aki.teachreg(this.dataa).subscribe((dataa)=>{
 
   })
-  alert("success")
  }
 
 }

@@ -73,9 +73,27 @@
                   <label for="" class="form-label">Password</label>
                   <input type="password" name="" id="" class="form-control" name="password" [(ngModel)]="data.studpass">
                   <br>
-                  <button class="btn btn-primary">Register</button>
+                  <br><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">Register</button>
                   <br>
                 </form>
+
+                <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">STATUS</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        STUDENT SUCCESSFULLY REGISTERED.
+                      </div>
+                      <div class="modal-footer">
+                        <a routerLink="/logins"><button type="button" class="btn btn-primary" data-bs-dismiss="modal">GO TO LOGIN PAGE</button></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
             </div>
         </div>
     </div>

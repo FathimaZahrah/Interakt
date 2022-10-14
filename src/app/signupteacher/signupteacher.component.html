@@ -89,27 +89,27 @@
                     <label for="" class="form-label">Password</label>
                     <input type="password" name="" id="" class="form-control" name="password/" [(ngModel)]="dataa.teachpass">
                     <br>
-                   <button class="btn btn-primary">Register</button>
+                    <br><br><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">Register</button>
                 </form>
+
+                <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">STATUS</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        TEACHER SUCCESSFULLY REGISTERED.
+                      </div>
+                      <div class="modal-footer">
+                        <a routerLink="/logint"><button type="button" class="btn btn-primary" data-bs-dismiss="modal">GO TO LOGIN PAGE</button></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
             </div>
         </div>
     </div>
   </div>
-
-  <div class="container">
-                    
-    <div class="row" g-5>
-      <div class="col col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4"></div>
-      <div class="col col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
-    
-        <a style="margin: auto;
-        width: 50%;
-        padding: 10px;" routerLink="/logint"> <button class="btn btn-success">Go to Login</button></a>
-
-      </div>
-      <div class="col col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4"></div>
-    </div>
-  
-  </div>
-  <br>
-  <br>

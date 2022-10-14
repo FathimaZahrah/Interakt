@@ -22,12 +22,16 @@
         <div style="background-color:#edcdb3;" class="col 12 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3" align="center">
             
           <br><h2 align="center">Announcements</h2>
+          <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <form #announcement="ngForm" (ngSubmit)="Announce()">
             <br>
             <ul>
-              <textarea name="" id="" cols="30" rows="3" class="form-control"></textarea>
+              <input type="text" class="form-control" name="message" [(ngModel)]="data6.message">
             </ul>
             <br>
-            <a routerLink="/"><button align="center" class="btn btn-success">Submit</button></a>
+           <button align="center" class="btn btn-success">Submit</button>
+          </form>
+          </div>
         </div>
         <div class="col 12 col-sm-9 col-md-9 col-lg-9 col-xl-9 col-xxl-9">
             <div class="in-facility">
