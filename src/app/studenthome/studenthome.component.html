@@ -18,14 +18,15 @@
         <div style="text-align: center;" style="background-color:#edcdb3;" class="col 12 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3" align="center">
             
           <br><h2 align="center">Announcements</h2>
-          <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-            <form>
-            <br>
-            <ul>
-              <input type="text" class="form-control">
-            </ul>
+          <div *ngFor="let i of data3" class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+           <form>
+                <div class="card" style="width: 18rem;">
+                  <div class="card-body">
+                    <p class="card-text" style="text-align: left;" >{{i.message}}</p>
+                  </div>
+                </div>
+               </form>
          
-          </form>
           </div>
         </div>
         <div class="col 12 col-sm-9 col-md-9 col-lg-9 col-xl-9 col-xxl-9 ">

@@ -34,4 +34,7 @@ export class InteraktserviceService {
  ViewSub=()=>{
   return this.http.get('http://localhost:3200/ViewSub')
  }
+ announcements=()=>{
+  return this.http.get('http://localhost:3200/announcements')
+ }
 }
