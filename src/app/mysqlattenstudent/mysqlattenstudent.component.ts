@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { InteraktserviceService } from '../interaktservice.service';
 
 @Component({
   selector: 'app-mysqlattenstudent',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MysqlattenstudentComponent implements OnInit {
 
-  constructor() { }
+  constructor(private api:InteraktserviceService) { 
+    api.mysqlatten().subscribe((response=>{
+      this.data11=response
+    }))
+  }
 
   ngOnInit(): void {
   }
+  data11:any=[]
 
 }

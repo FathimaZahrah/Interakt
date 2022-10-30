@@ -38,31 +38,18 @@
   
   <div class="row" style="background-image: url(http://64.media.tumblr.com/147dd8517c490c545b8516fcf2d428ee/a2173060dcee5537-3b/s540x810/cf691a1c1932b3b620cfc36a7f9aa8529691c584.pnj);height: 250px; width: 100%;">
       <h2 style="color: white;  line-height: 250px;
-      height: 250px; font-size: 70px; font-family: Lucida Handwriting;" align="right">Assignments</h2>
+      height: 250px; font-size: 70px; font-family: Lucida Handwriting;" align="center">Assignments</h2>
   </div>
-<br><br>
-  <form action="">
-    <div class="row">
-        <div class="col col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2"></div>
-        
-        <div class="col col-5 col-sm-5 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
-            
-                <input type="text" class="form-control" placeholder="Enter the message">
-       
-        </div>
-        <div class="col col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
-       
-            <input type="file" name="" id="" class="file-control">
-    
-    </div>
 
-    <div class="col col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2"></div>
-    </div>   
+
+  <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12" align="center">
+    <form #myassign="ngForm" (ngSubmit)="Sqlassign()">
     <br>
-    <div class="row">
-        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xl-12" align="center">
-            <button class="btn btn-success">Add
-            </button>
-        </div>
-    </div>
-    </form>
+    <ul>
+      <textarea name="assignsql" cols="10" rows="5" class="form-control" [(ngModel)]="data12.assignsql"></textarea>
+    </ul>
+   <button align="center" class="btn btn-success">Submit</button>
+   <br>
+   <br>
+  </form>
+  </div>

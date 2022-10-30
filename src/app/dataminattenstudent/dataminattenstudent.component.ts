@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { InteraktserviceService } from '../interaktservice.service';
 
 @Component({
   selector: 'app-dataminattenstudent',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DataminattenstudentComponent implements OnInit {
 
-  constructor() { }
+  constructor(private api:InteraktserviceService) { 
+    api.datamineatten().subscribe((response=>{
+      this.data7=response
+    }))
+  }
 
   ngOnInit(): void {
   }
+  data7:any=[]
 
 }

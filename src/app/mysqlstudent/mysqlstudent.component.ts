@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { InteraktserviceService } from '../interaktservice.service';
 
 @Component({
   selector: 'app-mysqlstudent',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MysqlstudentComponent implements OnInit {
 
-  constructor() { }
+  constructor(private api:InteraktserviceService) {
+    api.mysqlnotes().subscribe((response=>{
+      this.data8=response
+    }))
+   }
 
   ngOnInit(): void {
   }
+  data8:any=[]
 
 }
