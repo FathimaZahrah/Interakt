@@ -17,12 +17,28 @@ data={
   constructor(private api:InteraktserviceService) { }
 
   ngOnInit(): void {
+    (() => {
+      'use strict'
+    
+      const forms = document.querySelectorAll('.needs-validation')
+      Array.prototype.slice.call(forms).forEach(form => {
+        form.addEventListener('submit',function(event:any){
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
+    
+          form.classList.add('was-validated')
+        }, false)
+      })
+    })()
   }
   Studreg()
   {
     this.api.studreg(this.data).subscribe((data)=>{
 
     })
+    alert("success")
 
   }
 

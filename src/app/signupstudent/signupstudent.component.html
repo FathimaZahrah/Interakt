@@ -56,43 +56,59 @@
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
             <br><br><p style="font-family: Lucida Handwriting; font-size: 30px;background-color: #edcdb3;" align="center"><b>Student Signup</b></p>
         </div>
+        
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
             <div class="row g-10">
-                <form #studentregister="ngForm" (ngSubmit)="Studreg()">
+                <form class="row g-3 needs-validation" #studentregister="ngForm" (ngSubmit)="studentregister.valid && Studreg()">
+                  <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                  <div>
                   <label for="" class="form-label">Name</label>
-                  <input type="text" class="form-control" name="name" [(ngModel)]="data.studname">
+                  <input type="text" class="form-control" name="name" [(ngModel)]="data.studname" required>
+                  <div class="invalid-feedback">
+                    Enter a valid Name.
+                </div>
+                </div>
+
+                <div>
                   <label for="" class="form-label">Registration Number</label>
-                  <input type="" class="form-control" name="regno" [(ngModel)]="data.studregno">
+                  <input type="" class="form-control" name="regno" [(ngModel)]="data.studregno" required>
+                  <div class="invalid-feedback">
+                    Enter a valid Register Number.
+                </div>
+                </div>
+
+                <div>
                   <label for="" class="form-label">Course</label>
-                  <select name="course" class="form-control" name="course" [(ngModel)]="data.studcourse">
+                  <select name="course" class="form-control" name="course" [(ngModel)]="data.studcourse" required>
                         <option value="Select">Select</option>
                         <option value="BCA">BCA</option>
                   </select>
+                  <div class="invalid-feedback">
+                    Enter a valid Course.
+                </div>
+                </div>
+
+                <div>
                   <label for="" class="form-label">Email</label>
-                  <input type="email" name="" id="" class="form-control" name="email" [(ngModel)]="data.studemail">
+                  <input type="email" name="" id="" class="form-control" name="email" [(ngModel)]="data.studemail" required>
+                  <div class="invalid-feedback">
+                    Enter a valid Email.
+                </div>
+                </div>
+
+                <div>
                   <label for="" class="form-label">Password</label>
-                  <input type="password" name="" id="" class="form-control" name="password" [(ngModel)]="data.studpass">
+                  <input type="password" name="" id="" class="form-control" name="password" [(ngModel)]="data.studpass" required>
+                  <div class="invalid-feedback">
+                    Enter a valid Password.
+                </div>
+                </div>
+
                   <br>
                   <br><button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">Register</button>
                   <br>
-                </form>
-
-                <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">STATUS</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body">
-                        STUDENT SUCCESSFULLY REGISTERED.
-                      </div>
-                      <div class="modal-footer">
-                        <a routerLink="/logins"><button type="button" class="btn btn-primary" data-bs-dismiss="modal">GO TO LOGIN PAGE</button></a>
-                      </div>
-                    </div>
                   </div>
-                </div>
+                </form>
 
             </div>
         </div>

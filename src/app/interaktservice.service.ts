@@ -85,4 +85,10 @@ export class InteraktserviceService {
  mysqlatten=()=>{
   return this.http.get('http://localhost:3200/mysqlatten')
  }
+ studDetail=()=>{
+  return this.http.get('http://localhost:3200/studDetail')
+ }
+ teachDetail=()=>{
+  return this.http.get('http://localhost:3200/teachDetail')
+ }
 }

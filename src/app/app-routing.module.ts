@@ -25,10 +25,10 @@ import { DataminassignstudentComponent } from './dataminassignstudent/dataminass
 import { DataminattenstudentComponent } from './dataminattenstudent/dataminattenstudent.component';
 import { AdminhomeComponent } from './adminhome/adminhome.component';
 import { AdminloginComponent } from './adminlogin/adminlogin.component';
-import { SubjectAddComponent } from './subject-add/subject-add.component';
-import { SubjectAllotmentComponent } from './subject-allotment/subject-allotment.component';
-import { StudentAllotComponent } from './student-allot/student-allot.component';
 import { MysqlhometeacherComponent } from './mysqlhometeacher/mysqlhometeacher.component';
+import { ViewstudentComponent } from './viewstudent/viewstudent.component';
+import { ViewteacherComponent } from './viewteacher/viewteacher.component';
+import { StudentlistComponent } from './studentlist/studentlist.component';
 
 const routes: Routes = [
   {path:"",component:HomeComponent},
@@ -62,9 +62,11 @@ const routes: Routes = [
 
   {path:"adminhome",component:AdminhomeComponent},
   {path:"adminlogin",component:AdminloginComponent},
-  {path:"subadd",component:SubjectAddComponent},
-  {path:"suballot",component:SubjectAllotmentComponent},
-  {path:"studallot",component:StudentAllotComponent}
+  {path:"studview",component:ViewstudentComponent},
+  {path:"teachview",component:ViewteacherComponent},
+
+  {path:"studlist",component:StudentlistComponent}
+  
 ];
 
 @NgModule({

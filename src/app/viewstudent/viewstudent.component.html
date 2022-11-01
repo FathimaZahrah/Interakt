@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="/adminhome">
+        <p style="font-family: Lucida Handwriting; line-height: 10px;
+        height: 10px;"><img src="https://64.media.tumblr.com/d6fab67b1dc67a478baf7c7c8d3bcb0b/c3e58613074bce27-20/s500x750/6e974e0b0df31ef0608c25e0510779490b2392ab.pnj" alt="" width="30" height="24" class="d-inline-block align-text-top" >
+        Interakt</p>
+      </a>
+      <a routerLink="/"><button class="btn-light">Signout</button></a>
+    </div>
+  </nav>
+
+
+  
+  <h1 style="background-color:#edcdb3;font-family: Lucida Handwriting; text-align: center;" align="center">Student Registration Details</h1>
+  
+  
+  <br>
+  <div class="row" g-5>
+  <div *ngFor="let i of data12" class="col col-12 col-sm-12 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
+    <div class="card text-bg-light">
+        <div class="card-body">
+            <h5 class="card-title">Name: {{i.studname}} </h5>
+            <h5 class="card-title">Registration Number: {{i.studregno}} </h5>
+            <h5 class="card-title">Course: {{i.studcourse}} </h5>
+            <h5 class="card-title">Email: {{i.studemail}} </h5>
+            <h5 class="card-title">Password: {{i.studpass}} </h5>
+          </div>
+      </div>
+</div>
+</div>

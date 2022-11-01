@@ -62,12 +62,22 @@
     <div class="row" style="font-family: Lucida Handwriting; font-size: 30px;background-color: #edcdb3;" align="center"><b>Login</b>
     </div>
     <div class="row" g-5>
-      <form #studentlogin="ngForm" (ngSubmit)="Studlog()">
+      <form class="row g-3 needs-validation" #studentlogin="ngForm" (ngSubmit)="studentlogin.valid && Studlog()">
       <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-        <label for="" class="form-label">Email</label>
-        <input type="email" name="email" class="form-control" [(ngModel)]="data.studemail">
+        <div>
+          <label for="" class="form-label">Email</label>
+        <input type="email" name="email" class="form-control" [(ngModel)]="data.studemail" required>
+        <div class="invalid-feedback">
+          Enter a valid email.
+      </div>
+      </div>
+      <div>
         <label for="" class="form-label">Password</label>
-        <input type="password" name="password" id="" class="form-control" [(ngModel)]="data.studpass">
+        <input type="password" name="password" id="" class="form-control" [(ngModel)]="data.studpass" required>
+        <div class="invalid-feedback">
+          Enter a valid password.
+      </div>
+      </div>
         <br>
        <button class="btn btn-primary">Log In</button>
       </div>

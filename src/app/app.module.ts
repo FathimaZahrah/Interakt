@@ -31,10 +31,10 @@ import { DataminassignstudentComponent } from './dataminassignstudent/dataminass
 import { DataminattenstudentComponent } from './dataminattenstudent/dataminattenstudent.component';
 import { AdminhomeComponent } from './adminhome/adminhome.component';
 import { AdminloginComponent } from './adminlogin/adminlogin.component';
-import { SubjectAddComponent } from './subject-add/subject-add.component';
-import { SubjectAllotmentComponent } from './subject-allotment/subject-allotment.component';
-import { StudentAllotComponent } from './student-allot/student-allot.component';
 import { MysqlhometeacherComponent } from './mysqlhometeacher/mysqlhometeacher.component';
+import { ViewstudentComponent } from './viewstudent/viewstudent.component';
+import { ViewteacherComponent } from './viewteacher/viewteacher.component';
+import { StudentlistComponent } from './studentlist/studentlist.component';
 
 @NgModule({
   declarations: [
@@ -65,10 +65,10 @@ import { MysqlhometeacherComponent } from './mysqlhometeacher/mysqlhometeacher.c
     DataminattenstudentComponent,
     AdminhomeComponent,
     AdminloginComponent,
-    SubjectAddComponent,
-    SubjectAllotmentComponent,
-    StudentAllotComponent,
-    MysqlhometeacherComponent
+    MysqlhometeacherComponent,
+    ViewstudentComponent,
+    ViewteacherComponent,
+    StudentlistComponent
   ],
   imports: [
     BrowserModule,
