@@ -12,25 +12,34 @@
   <h1 style="background-color:#edcdb3;" align="center">Student List</h1>
 
 
-<table border="5" cellspacing="10" cellpadding="20">
-    <tr>
-        <th>Roll Number</th>
-        <th>Students</th>
-    </tr>
-    <tr>
-        <th>1.</th>
-        <td>Anu Lekshmi</td>
-    </tr>
-    <tr>
-        <th>2.</th>
-        <td>Aasiya</td>
-    </tr>
-    <tr>
-        <th>3.</th>
-        <td>Anjana Jayakumar</td>
-    </tr>
-    <tr>
-        <th>4.</th>
-        <td>Fathima</td>
-    </tr>
-</table>
+
+  <div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12" align="center">
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            
+            
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                 
+<table class="table table-striped" >
+    <thead>
+      <tr style="background-color: #189AB4">
+        <th scope="col">Registration Number</th>
+        <th scope="col">Name</th>
+        
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let i of data">
+        <td>{{i.studregno}}</td>
+        <td>{{i.studname}}</td>
+       
+      </tr>
+      </tbody>
+      
+  </table>
+  </div>
+    </div>
+    </div>
+</div>

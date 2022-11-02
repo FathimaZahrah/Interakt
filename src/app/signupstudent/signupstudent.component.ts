@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { InteraktserviceService } from '../interaktservice.service';
 
 @Component({
@@ -14,7 +15,7 @@ data={
   studemail:"",
   studpass:""
 }
-  constructor(private api:InteraktserviceService) { }
+  constructor(private api:InteraktserviceService,private router:Router) { }
 
   ngOnInit(): void {
     (() => {
@@ -38,6 +39,7 @@ data={
     this.api.studreg(this.data).subscribe((data)=>{
 
     })
+    this.router.navigate(['/logins'])
     alert("success")
 
   }

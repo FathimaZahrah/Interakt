@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { InteraktserviceService } from '../interaktservice.service';
 
 @Component({
@@ -16,7 +17,7 @@ export class SignupteacherComponent implements OnInit {
     teachpass:""
   }
   
-  constructor(private aki:InteraktserviceService) { }
+  constructor(private aki:InteraktserviceService, private router:Router) { }
 
   ngOnInit(): void {
     (() => {
@@ -39,6 +40,8 @@ export class SignupteacherComponent implements OnInit {
   this.aki.teachreg(this.dataa).subscribe((dataa)=>{
 
   })
+  this.router.navigate(['/logint'])
+  alert("success")
  }
 
 }
