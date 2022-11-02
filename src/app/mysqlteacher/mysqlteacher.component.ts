@@ -8,7 +8,7 @@ import { InteraktserviceService } from '../interaktservice.service';
 })
 export class MysqlteacherComponent implements OnInit {
   data11={
-    notesql:""
+    notes:""
   }
 
   constructor(private api:InteraktserviceService) { }
@@ -19,5 +19,6 @@ export class MysqlteacherComponent implements OnInit {
     this.api.sqlnote(this.data11).subscribe((data11)=>{
       alert()
     })
+    
   }
 }
